@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    username: root
+    password: 1234xy
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dailydb?serverTimezone=UTC&useSSL=false
+#mybatis
+mybatis:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: com.my.daily.dto

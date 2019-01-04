@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.my.daily.dao.mysql.EventMapper">
+<resultMap id="BaseResultMap" type="com.my.daily.dto.EventAllDto">
+    <constructor>
+        <idArg column="id" javaType="java.lang.Long" jdbcType="INTEGER"/>
+        <arg column="name" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <arg column="create_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP"/>
+        <arg column="update_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP"/>
+        <arg column="read_time" javaType="java.time.LocalDateTime" jdbcType="TIMESTAMP"/>
+        <arg column="description" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        <arg column="event_level" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+        <arg column="read_times" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+    </constructor>
+</resultMap>
+    <resultMap id="EventDtoResultMap" type="com.my.daily.dto.EventDto">
+        <constructor>
+            <idArg column="id" javaType="java.lang.Long" jdbcType="INTEGER"/>
+            <arg column="name" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <arg column="create_time" javaType="java.sql.Timestamp" jdbcType="TIMESTAMP"/>
+            <arg column="description" javaType="java.lang.String" jdbcType="VARCHAR"/>
+        </constructor>
+    </resultMap>
+    <sql id="Base_Column_List" >
+        id,name,create_time, update_time, read_time, description, event_level, read_times
+    </sql>
+    <sql id="Event_List">
+       name, create_time, update_time,description,event_level
+    </sql>
+    <select id="selectEventDto" resultType="com.my.daily.dto.EventDto">
+      select
+      <include refid="Base_Column_List"/>
+       from event_db;
+    </select>
+    <insert id="insert" parameterType="com.my.daily.dto.EventUpdateDto">
+    insert into event_db (
+   <include refid="Event_List"/>)
+  values (#{name},#{createTime},#{updateTime},#{description},#{eventLevel})
+    </insert>
+    <update id="update" parameterType="com.my.daily.dto.EventAllDto">
+        update event_db set
+        <trim suffixOverrides=",">
+          <if test='name !=null and name!=""'>
+              name=#{name},
+          </if>
+            <if test='updateTime!=null and update!=""'>
+              update_time=#{updateTime},
+            </if>
+            <if test='readTime !=null and readTime!=""'>
+                read_time=#{readTime},
+            </if>
+            <if test='description !=null and description!=""'>
+                description =#{description},
+            </if>
+            <if test='eventLevel !=null and eventLevel!=""'>
+                event_level=#{eventLevel},
+            </if>
+            <if test='readTimes!=null and readTimes!=""'>
+                read_times=#{readTimes}
+            </if>
+        </trim>
+        where create_time=#{createTime}
+
+    </update>
+
+    <delete id="delete" parameterType="java.time.LocalDateTime">
+        delete from event_db where create_time=#{createTime}
+    </delete>
+</mapper>
