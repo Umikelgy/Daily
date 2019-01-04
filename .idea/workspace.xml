@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2048f654-ea07-4b80-ab4c-e2119ed5538d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/main/java/com/my/daily/DailyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/main/java/com/my/daily/controller/EventController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/main/java/com/my/daily/dao/fd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/main/java/com/my/daily/dao/mysql/EventMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/main/java/com/my/daily/dto/EventAllDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/main/java/com/my/daily/dto/EventDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/main/java/com/my/daily/dto/EventUpdateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/main/java/com/my/daily/service/EventService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/main/java/com/my/daily/service/impl/EventServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/main/resources/mapper/EventMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/daily_event/src/test/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -106,6 +85,7 @@
         <counts>
           <entry key="java" value="2154" />
           <entry key="properties" value="285" />
+          <entry key="txt" value="16" />
           <entry key="xml" value="2105" />
           <entry key="yml" value="145" />
         </counts>
@@ -113,6 +93,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2154" />
+          <entry key="PLAIN_TEXT" value="16" />
           <entry key="Properties" value="285" />
           <entry key="SQL" value="17" />
           <entry key="XML" value="2088" />
@@ -217,8 +198,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/daily_event/src/main/resources/mapper/EventMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+            <state relative-caret-position="529">
+              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -295,7 +276,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -442,7 +423,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546587207845" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546587370888" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -516,12 +497,20 @@
       <updated>1546484830865</updated>
       <workItem from="1546484835343" duration="8000" />
       <workItem from="1546484876323" duration="16433000" />
-      <workItem from="1546563653500" duration="16751000" />
+      <workItem from="1546563653500" duration="17045000" />
     </task>
+    <task id="LOCAL-00001" summary="&quot;Daily 1.0&quot;">
+      <created>1546587244733</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1546587244733</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33192000" />
+    <option name="totallyTimeSpent" value="33486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -538,7 +527,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" visible="true" weight="0.25841478" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" visible="true" weight="0.2519001" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -567,6 +556,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Daily 1.0&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Daily 1.0&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
@@ -713,8 +706,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daily_event/src/main/resources/mapper/EventMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        <state relative-caret-position="529">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
         </state>
       </provider>
     </entry>
